@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  padding: 5%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-section {
+  justify-content: space-between;
+}
+
+.leaderboard {
+  width: 40%;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.leaderboard-header {
+  justify-content: space-between;
+}
+
+.leaders-list {
+  max-height: 500px;
+  overflow-y: scroll;
+  flex-direction: column;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scroll bar for Chrome and Safari */
+
+.leaders-list::-webkit-scrollbar {
+  display: none;
+}
+
+.form-div {
+  width: 40%;
+}
+
+.form {
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.submit-button {
+  width: 30%;
+  margin-left: auto;
+}
