@@ -6,7 +6,7 @@ import './style.css';
 // Grab all elements
 const form = document.querySelector('.form');
 const refresh = document.querySelector('.refresh');
-let leadersArray = Storage.getStorage();
+const leadersArray = Storage.getStorage();
 
 // form part
 form.addEventListener('submit', (e) => {
