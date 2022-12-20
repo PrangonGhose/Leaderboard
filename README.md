@@ -55,7 +55,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Project Name
 
-#### To Do List Project
+#### Leaderboard Project
 
 ## 🛠 Built With <a name="built-with"></a>
 
