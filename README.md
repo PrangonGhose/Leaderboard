@@ -24,7 +24,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <h1><b>To Do List Project</b></h1>
+  <h1><b>Leaderboard Project</b></h1>
 
 </div>
 
@@ -104,7 +104,7 @@ $ node --version && npm --version
 ```
 ### Setup
 
-Clone the repository using [this link](https://github.com/PrangonGhose/To-do-list.git)
+Clone the repository using [this link](https://github.com/PrangonGhose/Leaderboard.git)
 
 ### Install
 
@@ -159,7 +159,7 @@ This website is applicable for both mobile and desktop version.
 
 Contributions, issues, and feature requests are welcome! Add suggestions by opening new issues.
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/PrangonGhose/Leaderboard/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
