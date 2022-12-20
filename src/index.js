@@ -1,10 +1,12 @@
 // Import modules
-import addToForm, { leadersArray, uiObject } from './formAdd.js';
+import Storage from './localStorage.js';
+import addToForm, { uiObject } from './formAdd.js';
 import './style.css';
 
 // Grab all elements
 const form = document.querySelector('.form');
 const refresh = document.querySelector('.refresh');
+let leadersArray = Storage.getStorage();
 
 // form part
 form.addEventListener('submit', (e) => {
