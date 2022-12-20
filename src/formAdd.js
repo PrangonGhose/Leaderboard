@@ -7,7 +7,7 @@ import UI, { array } from './domObject.js';
 const leaderName = document.querySelector('.leader-name');
 const leaderScore = document.querySelector('.leader-score');
 export const uiObject = new UI(); // object to be displayed in the DOM
-export let leadersArray = Storage.getStorage(); // eslint-disable-line import/no-mutable-exports
+let leadersArray = Storage.getStorage();
 // object to be displayed in the DOM
 let index; // index of the leader
 if (leadersArray.length !== 0) {
