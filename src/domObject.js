@@ -1,5 +1,3 @@
-import Storage from './localStorage.js';
-
 // grab all elements
 export const leadersList = document.querySelector('.leaders-list');
 export const leaderName = document.querySelector('.leader-name');
@@ -9,7 +7,7 @@ export const leaderScore = document.querySelector('.leader-score');
 export let array; // eslint-disable-line
 
 export default class UI {
-  constructor(leadersArray = Storage.getStorage()) {
+  constructor(leadersArray) {
     this.leadersArray = leadersArray;
     array = leadersArray;
   }
@@ -32,14 +30,14 @@ export default class UI {
 
   static displayOnDom(item) {
     const displayHTML = `
-    <p><strong>${item.leaderName}</strong>: ${item.leaderScore}</p>
+    <p><strong>${item.user}</strong>: ${item.score}</p>
     `;
     return displayHTML;
   }
 
   displayNothing = () => {
     const leadersList = document.querySelector('.leaders-list');
-    const displayData = '<h3 class="display-nothing">Leaderboard is empty</h2>';
+    const displayData = '<h3 class="display-nothing">Press Refresh to show all scores.</h2>';
     leadersList.innerHTML = displayData;
   }
 
