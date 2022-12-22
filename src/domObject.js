@@ -1,5 +1,3 @@
-import Storage from './localStorage.js';
-
 // grab all elements
 export const leadersList = document.querySelector('.leaders-list');
 export const leaderName = document.querySelector('.leader-name');
@@ -9,7 +7,7 @@ export const leaderScore = document.querySelector('.leader-score');
 export let array; // eslint-disable-line
 
 export default class UI {
-  constructor(leadersArray = Storage.getStorage()) {
+  constructor(leadersArray) {
     this.leadersArray = leadersArray;
     array = leadersArray;
   }
