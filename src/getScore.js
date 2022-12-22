@@ -6,6 +6,6 @@ const getScore = async () => {
   const response = await fetch(url); // wait until response is recorded from the URL
   const data = await response.json(); // wait until response is parsed as JSON
   return data.result; // return result to show on DOM
-}
+};
 
 export default getScore;
