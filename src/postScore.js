@@ -2,9 +2,9 @@ const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/game
 
 const postScore = async (playerName, playerScore) => {
   const data = {
-    'user': playerName,
-    'score': playerScore,
-  }
+    user: playerName,
+    score: playerScore,
+  };
   const params = {
     method: 'post',
     headers: {
@@ -16,6 +16,6 @@ const postScore = async (playerName, playerScore) => {
   const response = await fetch(url, params);
   const responseJSON = await response.json();
   return responseJSON.result;
-}
+};
 
 export default postScore;
