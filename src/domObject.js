@@ -32,14 +32,14 @@ export default class UI {
 
   static displayOnDom(item) {
     const displayHTML = `
-    <p><strong>${item.leaderName}</strong>: ${item.leaderScore}</p>
+    <p><strong>${item.user}</strong>: ${item.score}</p>
     `;
     return displayHTML;
   }
 
   displayNothing = () => {
     const leadersList = document.querySelector('.leaders-list');
-    const displayData = '<h3 class="display-nothing">Leaderboard is empty</h2>';
+    const displayData = '<h3 class="display-nothing">Press Refresh to show all scores.</h2>';
     leadersList.innerHTML = displayData;
   }
 
