@@ -1,12 +1,11 @@
 // Import modules
-import Storage from './localStorage.js';
-import addToForm, { uiObject } from './formAdd.js';
+import { addToForm, uiObject } from './formAdd.js';
+import refreshButton from './refreshButton.js';
 import './style.css';
 
 // Grab all elements
 const form = document.querySelector('.form');
 const refresh = document.querySelector('.refresh');
-const leadersArray = Storage.getStorage();
 
 // form part
 form.addEventListener('submit', (e) => {
@@ -16,15 +15,10 @@ form.addEventListener('submit', (e) => {
 
 // page refresh
 refresh.addEventListener('click', () => {
-  window.location.reload();
+  refreshButton();
 });
 
 // once the browser is loaded
 window.addEventListener('DOMContentLoaded', () => {
-  uiObject.leadersArray = leadersArray;
-  if (leadersArray.length === 0) {
-    uiObject.displayNothing();
-  } else {
-    uiObject.displayData(leadersArray);
-  }
+  uiObject.displayNothing();
 });
