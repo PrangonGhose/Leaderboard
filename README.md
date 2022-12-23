@@ -118,11 +118,15 @@ $ git clone https://github.com/PrangonGhose/Leaderboard.git
 
 In the terminal, run these commands to get into development.
 ```
-$ cd To-do-list
+$ cd Leaderboard
 
 $ npm init -y
 
-$ npm install
+$ npm install (install dependencies)
+
+$ npm run build (create the optimized for production)
+
+$ npm start (run the app locally)
 ```
 ### Usage
 
