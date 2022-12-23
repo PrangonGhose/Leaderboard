@@ -67,12 +67,13 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
+- Use of API to store scores of the players and to show the scores in the DOM.
 - Project with webpack.
 - Used HTML Webpack Plugin to generate HTML files.
 - Array of leaders is used to populate the HTML.
 - Function to iterate over tasks to populate HTML according to task index order.
 - Dynamically generate leader list.
-- Styling used following template.
+- Styling used a wireframe template.
 - Code is created in src folder and dist folder is generated automatically.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -117,11 +118,15 @@ $ git clone https://github.com/PrangonGhose/Leaderboard.git
 
 In the terminal, run these commands to get into development.
 ```
-$ cd To-do-list
+$ cd Leaderboard
 
 $ npm init -y
 
-$ npm install
+$ npm install (install dependencies)
+
+$ npm run build (create the optimized for production)
+
+$ npm start (run the app locally)
 ```
 ### Usage
 

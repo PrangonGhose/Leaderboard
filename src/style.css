@@ -5,6 +5,12 @@
 
 body {
   padding: 5%;
+  padding-top: 2%;
+  background-color: #9191d2;
+}
+
+h1 {
+  margin-bottom: 1em;
 }
 
 .flex {
@@ -29,7 +35,8 @@ body {
 .leaders-list {
   max-height: 500px;
   overflow-y: scroll;
-  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1em;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -40,6 +47,24 @@ body {
   display: none;
 }
 
+.player-list {
+  padding: 2%;
+  border: 5px solid black;
+  font-size: 25px;
+  border-radius: 5px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.list-header {
+  border: 0;
+  background-color: azure;
+}
+
+.hide {
+  display: none;
+}
+
 .form-div {
   width: 40%;
 }
@@ -47,9 +72,29 @@ body {
 .form {
   flex-direction: column;
   row-gap: 1em;
+  font-size: larger;
+  height: fit-content;  /* stylelint-disable-line */
+}
+
+input {
+  height: 15%;
+  width: 100%;
+  border-radius: 5px;
+  font-size: large;
+}
+
+button {
+  background-color: cadetblue;
+  font-size: larger;
+  border-radius: 5px;
+}
+
+button:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 5px red;
 }
 
 .submit-button {
-  width: 30%;
+  width: 40%;
   margin-left: auto;
 }

@@ -20,18 +20,28 @@ export default class UI {
 
   displayData(leadersArray = this.leadersArray) {
     const leadersList = document.querySelector('.leaders-list');
+    const listHeader = document.querySelector('.list-header');
     const displayData = [];
     for (let i = leadersArray.length - 1; i >= 0; i -= 1) { // recent score at top
       const displayDataItem = UI.displayOnDom(leadersArray[i]);
       displayData.push(displayDataItem);
+    }
+    if (listHeader.classList.contains('hide')) {
+      listHeader.classList.remove('hide');
     }
     leadersList.innerHTML = (displayData).join(' ');
   }
 
   static displayOnDom(item) {
     const displayHTML = `
-    <p><strong>${item.user}</strong>: ${item.score}</p>
-    `;
+    <div class="player-list flex">
+      <div class="player-name">
+        <p><strong>${item.user}</strong>:</p>
+      </div>
+      <div class="player-score">
+        <p> ${item.score}</p>
+      </div>
+    </div>`;
     return displayHTML;
   }
 
