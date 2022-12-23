@@ -73,7 +73,7 @@ h1 {
   flex-direction: column;
   row-gap: 1em;
   font-size: larger;
-  height: fit-content;
+  height: fit-content;  /* stylelint-disable-line */
 }
 
 input {
