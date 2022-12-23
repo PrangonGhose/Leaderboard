@@ -26,7 +26,9 @@ export default class UI {
       const displayDataItem = UI.displayOnDom(leadersArray[i]);
       displayData.push(displayDataItem);
     }
-    listHeader.classList.toggle('hide');
+    if (listHeader.classList.contains('hide')) {
+      listHeader.classList.remove('hide');
+    }
     leadersList.innerHTML = (displayData).join(' ');
   }
 
