@@ -30,6 +30,7 @@ h1 {
 
 .leaderboard-header {
   justify-content: space-between;
+  width: 100%;
 }
 
 .leaders-list {
@@ -39,6 +40,7 @@ h1 {
   row-gap: 1em;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  width: 100%;
 }
 
 /* Hide scroll bar for Chrome and Safari */
